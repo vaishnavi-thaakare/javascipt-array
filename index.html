@@ -31,8 +31,180 @@
     console.log(mix)
     <hr>
     <h3>@ Array Random Access</h3>
-    
+    const number = [1, 15, 89, 45, 52];
+console.log(number[1]);
+number[1] = 51;
+console.log(number)
+<hr>
+<h3>@ methods of an array</h3>
+<ol>
+    <li>push-Add to end</li>
+    <li>pull-remove from end.</li>
+    <li>Shift-Add to start</li>
+    <li>Unshift-remove from start.</li>
+    <li>Conct-merge array</li>
+    <li>includes-look for value</li>
+    <li>indexof -number present at given index number</li>
+    <li>join-create string of an array.</li>
+    <li>reverse- reverse an array.</li>
+    <li>Slice- Copies a portion of an array.</li>
+    <li>splice-replace the element</li>
+    <li>sort-sorting of an array </li>
+</ol>
+    <hr>
+    <h3>@ push and pop</h3>
+    const paper = ["que1", "que2", "que3", "que4", "que5", "que6"]
+console.log(paper)
+paper.push("que7");
+console.log(paper);
 
+console.log(paper.pop());
+console.log(paper.pop());
+console.log(paper.pop());
+console.log(paper.pop());
+console.log(paper)
+<hr>
+<h3> Shift and unshift</h3>
+const series = [5, 6, 7, 8, 9, 10, ]
+const userInput1 = prompt("Enter the first number?");
+const userInput2 = prompt("Enter the second number?");
+const userInput3 = prompt("Enter the third number?");
+const userInput4 = prompt("Enter the fourth number?");
+const userInput5 = prompt("Enter the fifth number?");
+series.unshift(parseInt(userInput1));
+series.unshift(parseInt(userInput1));
+series.unshift(parseInt(userInput1));
+series.unshift(parseInt(userInput1))
+series.unshift(parseInt(userInput1));
+console.log(series)
+
+
+series.shift();
+series.shift();
+console.log(series)
+<hr>
+<h3>@ Reverse, Concat and indexOf , includes</h3>
+const ascendingOrder = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// console.log(ascendingOrder);
+const descendingOrder=ascendingOrder.reverse();
+console.log(descendingOrder);
+
+
+var array1 = [1, 2, 3, 4, 5, 6];
+var array2 = [7, 8, 9, 10, 11];
+console.log(array1.concat(array2))
+
+
+const number = [101, 158, 478, 125, 366, 5512];
+console.log(number.indexOf(158))
+
+const array = [1, 012, 308, 78, 45, 93, 997];
+console.log(array.includes(308));
+console.log(array.includes(201));
+
+console.log(array.slice(3))
+console.log(array.slice(2, 8));
+
+
+
+splice -not understood;
+const month = ["jan", "feb", "march", "may", "jun", "july"];
+console.log(month.splice(3,1,"april"))
+
+const a = 10;
+ a = a + 10;
+
+in browser
+
+[1, 2, 3] == [1, 2, 3];
+[1, 2] === [1, 2]
+
+
+
+const array1 = [1, 2, 3, 4, 5];
+const array2 = array1;
+if (array1 === array2) {
+    console.log("both are same.")
+} else {
+    console.log("Both are diffrent")
+}
+
+array1.push(12, 15);
+console.log(array1);
+console.log(array2)
+
+<hr>
+<h3>@ Multidimentional Array</h3>
+const box = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+console.log(box);
+console.log(box[1]);
+console.log(box[2][1]);
+<hr>
+<h3>@ Object</h3>
+<p>Array contain different datatype.</p>
+
+var object1 = {
+    firstName: "vaishnavi",
+    birthDate: 25,
+    boolean: true,
+    array: [1, 5, 2, 6, 3, 4],
+
+}
+console.log(object1)
+console.log(object1.firstName);
+console.log(object1.array);
+console.log(object1[array])
+
+
+var object2 = {
+    1990: "birthyear",
+    1478:"birthdate"
+}
+console.log(object2);
+console.log(object2[1478])
+console.log(object2[1990])
+<hr>
+<h3>@ Modifying Object</h3>
+var object2 = {
+    1990: "birthyear",
+    1478:"birthdate"
+}
+console.log(object2);
+console.log(object2[1478]);
+object2[1478]="none";
+console.log(object2);
+
+<hr>
+<h3>@ nesting array and object</h3>
+
+
+var object1 = [{
+    
+    userName: "vaishnavi",
+    gender: "female",
+    age: 25
+} ,{
+    userName: "neha",
+    gender: "female",
+    age: 20
+} ,{
+    userName: "pratiksha",
+    gender: "female",
+    age: 18
+}]
+
+console.log(object1)
+
+
+
+// Array nested inside an object1
+
+var object2 = {
+firstName: "vaishnavi",
+value: [1, 5, 6, 6, 6],
+time:[1547,4596,1897,5865]
+}
+console.log(object2)
 
 
 
